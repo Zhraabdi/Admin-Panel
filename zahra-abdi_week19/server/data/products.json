@@ -1,0 +1,68 @@
+[
+  {
+    "id": "639cad48-aab4-4bf9-aed0-fa9ddf4f5016",
+    "name": "تیشرت",
+    "price": 550,
+    "quantity": 32
+  },
+  {
+    "id": "c1548f39-758f-46f9-ba67-dc2d0365ec70",
+    "name": "هودی",
+    "price": 860,
+    "quantity": 23
+  },
+  {
+    "id": "b413b415-68c0-44e2-8049-801447563abe",
+    "name": "ست ورزشی",
+    "price": 900,
+    "quantity": 12
+  },
+  {
+    "id": "9e36a8dc-29ea-47ea-ac42-f465ba1686b3",
+    "name": "تیشرت وگاس",
+    "price": 767,
+    "quantity": 54
+  },
+  {
+    "id": "d247ac50-7ef5-491d-b5a2-07505ce30246",
+    "name": "سوییشرت دخترانه",
+    "price": 600,
+    "quantity": 50
+  },
+  {
+    "id": "46706e18-c81c-4aa9-bb08-c11eab19bead",
+    "name": "شلوار جین ",
+    "price": 960,
+    "quantity": 20
+  },
+  {
+    "id": "97f6d909-294e-447c-9323-1e3899e3d477",
+    "name": "تیشرت ورزشی",
+    "price": 500,
+    "quantity": 40
+  },
+  {
+    "id": "474dee4b-dc59-45bc-ad60-8c4ac0221fe4",
+    "name": "تیشرت پسرانه",
+    "price": 800,
+    "quantity": 30
+  },
+  {
+    "id": "7570b549-dfef-4b63-8dbf-b6c729b5df98",
+    "name": "شلوارک ورزشی ",
+    "price": 460,
+    "quantity": 50
+  },
+  {
+    "id": "e288078e-6506-434c-a404-d8d99faa8a11",
+    "name": "کراپ ",
+    "price": 120,
+    "quantity": 43
+  },
+  {
+    "id": "ea3828d6-361c-4814-99e2-51cc657b7799",
+    "name": "ست تاپ شلوارک",
+    "price": 600,
+    "quantity": 30
+  }
+]

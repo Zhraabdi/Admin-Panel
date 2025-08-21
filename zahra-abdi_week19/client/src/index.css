@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.forceBlue {
+  color: #55A3F0 !important;
+  fill: #55A3F0 !important;
+  stroke: #55A3F0 !important;
+}
+
+@layer base {
+  * {
+    @apply box-border m-0 p-0 ;
+  }
+
+  body {
+    @apply text-text m-auto  max-w-[1140px]  min-h-screen bg-back font-vazirmatn;
+  }
+  input, textarea, select, button {
+    @apply font-vazirmatn;
+  }
+}
+
+.loader-ring {
+  @apply inline-block h-14 w-14 rounded-full border-2 border-current border-t-transparent animate-spin text-blue-600;
+}
+
+
+@font-face {
+  font-family: "Kalameh";
+  src: url("/fonts/Kalameh-Bold.ttf");
+}
+@font-face {
+  font-family: "VazirMatn";
+  src: url("/fonts/Vazirmatn-Medium.woff2");
+  font-weight: 500;
+}
+.inputs {
+  @apply bg-graycustom border border-graycustom rounded-[15px] focus:outline-none focus:ring-0 focus:border-graycustom w-full p-3;
+}
+
+.errors{
+  @apply text-red-500 text-sm h-4;
+}
+.Toastify__toast {
+  font-family: Vazirmatn, sans-serif !important;
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+
