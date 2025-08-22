@@ -22,7 +22,7 @@ The goal of this project is to practice **React Hooks, React Query, form managem
 ### Download from the repository
 ```bash
 cd server
-node server.js
+node start
 cd client
 npm install
 npm run dev
