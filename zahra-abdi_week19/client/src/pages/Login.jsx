@@ -41,7 +41,6 @@ function Login() {
   return (
     
     <div className="min-h-screen flex items-center justify-center flex-col gap-20 mx-3">
-    <h1 className="font-kalameh text-3xl font-normal">بوت کمپ بوتواستارت</h1>
     <div className="flex flex-col justify-between items-center  bg-white w-full sm:w-[470px] md:w-[470px] max-w-[470px] min-h-[523px] rounded-[40px] border border-gray-200 p-6 mx-4 ">
       <div>
       <img className="w-20 h-20" src="/images/logo.svg" alt="لوگو" />
