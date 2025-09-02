@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import Search from "../components/Search";
 import { useUI } from "../context/UIContext";
+import { deleteCookie } from "../utils/cookie";
+
 
 function DashboardHeader({ isLoading }) { 
   const { state: authState, dispatch: authDispatch } = useAuth();
@@ -12,6 +14,7 @@ function DashboardHeader({ isLoading }) {
 
   const handleLogout = () => {
     authDispatch({ type: "LOGOUT" });
+    deleteCookie("token");
     toast.success("خروج با موفقیت انجام شد");
     navigate("/login");
   };

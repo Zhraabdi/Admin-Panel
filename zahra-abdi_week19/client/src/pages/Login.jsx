@@ -8,6 +8,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { toast } from "react-toastify";
 import { loginSchema } from "../validations/validationSchema";
 import { Link } from "react-router-dom";
+import { setCookie } from "../utils/cookie";
+
 
 
 function Login() {
@@ -25,6 +27,7 @@ function Login() {
     onSuccess: (data, variables) => {
       dispatch({ type: "LOGIN_SUCCESS", payload: { token: data.token, user: { username: variables.username } },    
       });
+      setCookie("token", data.token, 7);
       toast.success(" ورود موفقیت‌آمیز بود");
       navigate("/dashboard");
     },

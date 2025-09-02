@@ -1,4 +1,6 @@
 import { createContext, useReducer, useContext, useEffect } from "react";
+import { setCookie, getCookie, deleteCookie } from "../utils/cookie";
+
 
 const AuthContext = createContext();
 const initialState = {
@@ -31,8 +33,11 @@ export function AuthProvider({ children }) {
   const [state, dispatch] = useReducer(authReducer, initialState);
 
   useEffect(() => {
-    const token = localStorage.getItem("token");
-    const username = localStorage.getItem("username");
+    // const token = localStorage.getItem("token");
+    // const username = localStorage.getItem("username");
+    const token = getCookie("token");
+    const username = getCookie("username");
+
   
     if (token && username) {
       dispatch({
@@ -47,12 +52,13 @@ export function AuthProvider({ children }) {
 
   useEffect(() => {
     if (state.isAuthenticated) {
-      localStorage.setItem("token", state.token);
-      localStorage.setItem("username", state.user.username);
+      setCookie("token", state.token, 7);
+      setCookie("username", state.user.username, 7);
     } else {
-      localStorage.removeItem("token");
-      localStorage.removeItem("username");
-    }
+      deleteCookie("token");
+      deleteCookie("username");
+    }    
+
   }, [state]);
 
   return (

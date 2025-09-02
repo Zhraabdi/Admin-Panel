@@ -13,9 +13,11 @@ function ProtectedRoute({ children }) {
   
 
   if (!state.isAuthenticated) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/login"/>;
   }
   return children;
 }
 export default ProtectedRoute;
+
+
 
