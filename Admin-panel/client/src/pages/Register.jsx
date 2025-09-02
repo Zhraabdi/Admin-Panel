@@ -43,7 +43,7 @@ function Register() {
     <div className="flex flex-col justify-between items-center  bg-white w-full sm:w-[470px] md:w-[470px] max-w-[470px] min-h-[523px] rounded-[40px] border border-gray-200 p-6 mx-4 ">
     <div>
       <img className="w-20 h-20" src="/images/logo.svg" alt="لوگو" />
-      <h1 className="text-2xl font-medium pb-4 pt-4">فرم ثبت نام </h1>
+      <h1 className="text-2xl font-medium pb-8 pt-4">فرم ثبت نام </h1>
       </div>
       <form className="w-full flex flex-col gap-2" onSubmit={handleSubmit(onSubmit)}>
         <input className="inputs" type="text" placeholder="نام کاربری" {...register("username")} />

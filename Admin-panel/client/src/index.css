@@ -27,12 +27,8 @@
 
 
 @font-face {
-  font-family: "Kalameh";
-  src: url("/fonts/Kalameh-Bold.ttf");
-}
-@font-face {
   font-family: "VazirMatn";
-  src: url("/fonts/Vazirmatn-Medium.woff2");
+  src: url("/fonts/Vazirmatn-Medium.ttf");
   font-weight: 500;
 }
 .inputs {

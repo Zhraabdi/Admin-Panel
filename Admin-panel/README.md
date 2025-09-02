@@ -39,5 +39,14 @@ http://localhost:5173
 ### Product List
 ![Product List](./ProductList.png)
 
+### Register Page
+![Register Page](./Register.png)
+
+### Add Product Modal
+![Add Product Modal](./ProductList.png)
+
 ### Edit Product Modal
 ![Edit Product Modal](./EditProduct.png)
+
+### Delete Product Modal
+![Delete Product Modal](./DeleteProduct.png)
