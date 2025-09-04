@@ -29,41 +29,17 @@ const getProducts = async (page, limit, searchTerm) => {
 };
 
 
-
-
-
-// const deleteProduct = async (id) => {
-//     const res = await axiosInstance.delete(`/products/${id}`);
-//     return res.data; 
-//   };
-// const deleteProduct = async (id) => {
-//   const res = await axiosInstance.delete(`/products/${id}`, {
-//     headers: {
-//       Authorization: `Bearer ${localStorage.getItem("token")}`,
-//     },
-//   });
-//   return res.data;
-// };
 const deleteProduct = async (id) => {
-  const res = await axiosInstance.delete(`/products/${id}`, {
-    headers: {
-      Authorization: `Bearer ${localStorage.getItem("token")}`,
-    },
-  });
+  const res = await axiosInstance.delete(`/products/${id}`);
   return res.data;
 };
 
-
-
-  
-  const deleteProductsByIds = async (ids) => {
-    const res = await axiosInstance.delete("/products", {
-      headers: {
-      Authorization: `Bearer ${localStorage.getItem("token")}`},
-      data: { ids },
-    });
-    return res.data;
-  };
+const deleteProductsByIds = async (ids) => {
+  const res = await axiosInstance.delete("/products", {
+    data: { ids },
+  });
+  return res.data;
+};
   
 
   const updateProduct = async (product) => {
