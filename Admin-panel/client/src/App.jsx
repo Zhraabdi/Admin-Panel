@@ -16,12 +16,12 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/login" element={<Login/>} />
-        <Route path="/register" element={<Register/>} />
-        <Route path="/" element={state.isAuthenticated ? <Navigate to="/dashboard" /> : <Login />} />
-        <Route path="/products" element={<ProtectedRoute><Products/></ProtectedRoute>} />
-        <Route path="/dashboard" element={<ProtectedRoute><Dashboard/></ProtectedRoute>} />
-        <Route path="*" element={<PageNotFound/>} />
+      <Route path="/login" element={state.isAuthenticated ? <Navigate to="/dashboard" /> : <Login />}/>
+      <Route path="/register" element={state.isAuthenticated ? <Navigate to="/dashboard" /> : <Register />}/>
+      <Route path="/" element={state.isAuthenticated ? <Navigate to="/dashboard" /> : <Login />} />
+      <Route path="/products" element={<ProtectedRoute><Products/></ProtectedRoute>} />
+      <Route path="/dashboard" element={<ProtectedRoute><Dashboard/></ProtectedRoute>} />
+      <Route path="*" element={<PageNotFound/>} />
       </Routes>
       <ToastContainer className="font-vazirmatn" rtl={true} position="bottom-left" autoClose={3000} />
     </>
